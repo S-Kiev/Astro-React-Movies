@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Movies from '../components/Movies.astro';
+// @ts-ignore
+import Search from '@components/Search.jsx'
+---
+
+<Layout>
+	<h1>Hola a mi pagina de peliculas</h1>
+	<Search client:load/>
+	<Movies />
+</Layout>
+
